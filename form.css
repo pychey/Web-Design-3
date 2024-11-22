@@ -1,0 +1,67 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#3dc5a3;
+    font-weight: bold;
+    background-color: #537f91;
+    height: 100vh;
+    padding:30px;
+}
+
+form {
+    height:calc(100vh-40px);
+    background-color: #feffff;
+    display:grid;
+    grid-template-rows: 70px auto 50px;
+}
+
+fieldset {
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap: 10px;
+}
+
+span:nth-child(3){
+    grid-column: span 2;
+}
+
+input[type=text]{
+    margin:10px 0;
+    width:100%;
+    height:30px;
+    border:1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+label[for="gender"]{
+    display: block;
+}
+
+input[type=radio], .checkbox-container{
+    margin:10px 10px 10px 0px;
+}
+
+.gender {
+    font-size:14px;
+    font-weight:lighter;
+    color:#333;
+    margin-right:10px;
+}
+
+label[for="hobby"]{
+    display: block;
+}
+
+.checkbox{
+    font-size:14px;
+    font-weight:lighter;
+    color:#333;
+    margin-right:10px;
+}

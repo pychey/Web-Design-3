@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <h1>Create Account</h1>
+        <fieldset>
+            <span>
+                <label for="fname">First name</label>
+                <input type="text" id="fname">
+            </span>
+            <span>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname">
+            </span>
+            <span>
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </span>
+            <span>
+                <label for="pass">Password</label>
+                <input type="text" id="pass">
+            </span>
+            <span>
+                <label for="conpass">Confirm Password</label>
+                <input type="text" id="conpass">
+            </span>
+            <span>
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" name="gender">
+                <label class="gender">Male</label>
+                <input type="radio" id="gender" name="gender">
+                <label class="gender">Female</label>
+            </span>
+            <span>
+                <label for="hobby">Hobbies</label>
+                <div class="checkbox-container">
+                    <input type="checkbox">
+                    <label class="checkbox">Music</label>
+                    <input type="checkbox">
+                    <label class="checkbox">Sport</label>
+                    <input type="checkbox">
+                    <label class="checkbox">Travel</label>
+                    <input type="checkbox">
+                    <label class="checkbox">Movie</label>
+                </div>
+            </span>
+
+            <span>
+                <label>Source of Income</label>
+                <select>
+                    <option>Employed</option>
+                    <option>Business Owner</option>
+                    <option>Unemployed</option>
+                </select>
+            </span>
+            
+            <span>
+                <label>Income</label>
+                <input type="range" min="0" max="20">
+            </span>
+            <span>
+                <label>Upload Profile Picture</label>
+                <input type="file">
+            </span>
+            <span>
+                <label>Age</label>
+                <input type="number">
+            </span>
+            <span>
+                <label>Bio</label>
+                <textarea></textarea>
+            </span>
+        </fieldset>
+        <button>Create</button>
+    </form>
+</body>
+</html>
